@@ -1,6 +1,6 @@
 package com.lab4;
 
-public abstract class Shape implements Measurable {
+public abstract class Shape {
     protected String color;
     protected boolean filled;
 
@@ -29,12 +29,9 @@ public abstract class Shape implements Measurable {
         this.filled = filled;
     }
 
-    @Override
-    public String toString() {
-        return "Shape{" +
-                "color='" + color + '\'' +
-                ", filled=" + filled +
-                '}';
-    }
+    public abstract double getArea();
 
+    public abstract double getPerimeter();
+
+    public abstract String toString();
 }

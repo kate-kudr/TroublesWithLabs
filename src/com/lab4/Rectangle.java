@@ -41,7 +41,7 @@ public class Rectangle extends Shape {
 
     @Override
     public double getPerimeter() {
-        return 2*(length+width);
+        return 2*(width+length);
     }
 
     @Override
@@ -49,6 +49,8 @@ public class Rectangle extends Shape {
         return "Rectangle{" +
                 "width=" + width +
                 ", length=" + length +
-                "} " + super.toString();
+                ", color='" + color + '\'' +
+                ", filled=" + filled +
+                "} ";
     }
 }
