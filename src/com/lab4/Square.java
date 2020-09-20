@@ -1,5 +1,10 @@
 package com.lab4;
 
+//на диаграмме странное наследование Square от Rectangle
+//при таком наследовании возможно поведение квадрата у прямоугольника
+//в классе Square по факту объявлено 3 одинаковых сеттера
+//по этим причинам Square наследуется от Shape
+
 public class Square extends Shape {
     private double side;
 
