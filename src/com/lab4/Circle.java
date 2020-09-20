@@ -39,6 +39,6 @@ public class Circle extends Shape {
                 "radius=" + radius +
                 ", color='" + color + '\'' +
                 ", filled=" + filled +
-                "} ";
+                "} " + super.toString();
     }
 }

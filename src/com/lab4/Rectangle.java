@@ -51,6 +51,6 @@ public class Rectangle extends Shape {
                 ", length=" + length +
                 ", color='" + color + '\'' +
                 ", filled=" + filled +
-                "} ";
+                "} " + super.toString();
     }
 }

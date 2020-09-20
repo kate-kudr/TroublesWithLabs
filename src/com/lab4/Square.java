@@ -39,6 +39,6 @@ public class Square extends Shape {
                 "side=" + side +
                 ", color='" + color + '\'' +
                 ", filled=" + filled +
-                "} ";
+                "} " + super.toString();
     }
 }
