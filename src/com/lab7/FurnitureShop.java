@@ -1,7 +1,6 @@
 package com.lab7;
 
 public class FurnitureShop {
-    Furniture furniture;
     private int discount;
     private boolean warranty, blackFriday;
 
