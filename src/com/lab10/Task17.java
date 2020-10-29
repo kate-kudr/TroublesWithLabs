@@ -3,15 +3,17 @@ package com.lab10;
 import java.util.Scanner;
 
 public class Task17 {
-    private void recursion() {
+    public static int recursion() {
         Scanner scanner = new Scanner(System.in);
-        int n = 1;
-        while (n != 0)
-            n = scanner.nextInt();
-
+        int n = scanner.nextInt();
+        if (n == 0) {
+            return 0;
+        } else {
+            return Math.max(n, recursion());
+        }
     }
 
     public static void main(String[] args) {
-
+        System.out.println(recursion());
     }
 }
