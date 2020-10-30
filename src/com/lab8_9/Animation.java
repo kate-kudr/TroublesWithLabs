@@ -3,14 +3,13 @@ package com.lab8_9;
 import javax.swing.*;
 import java.awt.*;
 
-public class Picture extends JFrame {
-    public Picture(String fileName) {
-        PanelForPicture mp = new PanelForPicture(fileName);
+public class Animation extends JFrame{
+    public Animation (){
+        PanelForAnimation np = new PanelForAnimation();
         Container cont = getContentPane();
-        cont.add(mp);
-        setBounds(151, 0, 900, 1000);
+        cont.add(np);
+        setBounds(0, 0, 150, 250);
         setTitle("Picture");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
-
 }
