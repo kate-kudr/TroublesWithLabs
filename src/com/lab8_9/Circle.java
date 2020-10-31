@@ -14,7 +14,7 @@ public class Circle extends Shape{
     }
 
     public void paintComponents(Graphics gr){
-        gr.setColor(new Color(rand.nextFloat(), rand.nextFloat(), rand.nextFloat()));
+        gr.setColor(randColor);
         gr.drawOval(getX(), getY(), getRadius(), getRadius());
      }
 }

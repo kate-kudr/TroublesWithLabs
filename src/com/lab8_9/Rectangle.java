@@ -25,7 +25,7 @@ public class Rectangle extends Shape{
     }
 
     public void paintComponents(Graphics gr){
-        gr.setColor(new Color(rand.nextFloat(), rand.nextFloat(), rand.nextFloat()));
+        gr.setColor(randColor);
         gr.drawRect(getX(), getY(), getWidth(), getLength());
     }
 }
