@@ -15,7 +15,6 @@ public class Window extends JFrame {
 
     public static void main(String[] args) {
         Window window = new Window();
-        // window.setResizable(false);
         window.setVisible(true);
     }
 }
