@@ -27,7 +27,7 @@ public class Main {
         StringBuilder stringBuilder;
         String fileName = new Scanner(System.in).nextLine();
 
-        try (BufferedReader bf = new BufferedReader(new FileReader("src/main/java/sh4rkizz/lab24/" + fileName))) {
+        try (BufferedReader bf = new BufferedReader(new FileReader(fileName))) {
             List<String> list = Arrays.stream(bf.readLine().split(" ")).collect(Collectors.toList());
             while (list.size() != 0) {
                 System.out.println(list);
